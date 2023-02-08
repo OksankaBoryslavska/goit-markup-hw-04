@@ -118,6 +118,7 @@ body {
 .header-tel,
 .header-mail {
   display: flex;
+  align-items: center;
 }
 .header-tel:hover .icon-header,
 .header-tel:focus .icon-header {
@@ -363,7 +364,7 @@ body {
   border-radius: 50%;
 }
 .section-four-icon {
-  fill: var(--fil-icon-color);
+  fill: currentColor;
 }
 .section-four-icon:is(:hover, :focus) {
   fill: var(--white-color);
@@ -413,6 +414,7 @@ body {
 }
 .customers-link:is(:hover, :focus) {
   border-color: var(--accent-color);
+  outline: transparent;
 }
 .customers-link:is(:hover, :focus) .customers-icon {
   fill: var(--accent-color);
@@ -496,7 +498,8 @@ body {
 .social-icon {
   fill: var(--white-color);
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 /* Портфоліо */
@@ -524,14 +527,14 @@ body {
   border: 0px;
   padding: 6px 27px 6px 27px;
   text-align: center;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-filter:hover,
 .button-filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* active button */
@@ -570,6 +573,7 @@ body {
 .portfolio-link {
   display: block;
   color: #434455;
+  outline: transparent;
 }
 .portfolio-link:is(:hover, :focus) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
